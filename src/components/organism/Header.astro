@@ -1,0 +1,23 @@
+---
+import Navbar from "../molecule/Navbar.astro";
+import Headline from "../molecule/Headline.astro";
+---
+
+<header class="headerContainer">
+  <Navbar />
+  <Headline />
+</header>
+
+<style>
+  .headerContainer {
+    padding-inline: 4rem;
+    min-height: 50vh;
+    height: auto;
+    background-image: url("../../../public/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+</style>
